@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCTicketsWeb", "GCTicketsWeb\GCTicketsWeb.csproj", "{81DBF7DE-2F34-475A-920F-E5D1E2315F34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{B0CA8F06-2C03-4CF4-A23E-0F174D55ADCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{4D11E7F2-421F-4249-9976-1F640877D9D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81DBF7DE-2F34-475A-920F-E5D1E2315F34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DBF7DE-2F34-475A-920F-E5D1E2315F34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DBF7DE-2F34-475A-920F-E5D1E2315F34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DBF7DE-2F34-475A-920F-E5D1E2315F34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0CA8F06-2C03-4CF4-A23E-0F174D55ADCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0CA8F06-2C03-4CF4-A23E-0F174D55ADCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0CA8F06-2C03-4CF4-A23E-0F174D55ADCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0CA8F06-2C03-4CF4-A23E-0F174D55ADCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D11E7F2-421F-4249-9976-1F640877D9D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D11E7F2-421F-4249-9976-1F640877D9D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D11E7F2-421F-4249-9976-1F640877D9D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D11E7F2-421F-4249-9976-1F640877D9D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
