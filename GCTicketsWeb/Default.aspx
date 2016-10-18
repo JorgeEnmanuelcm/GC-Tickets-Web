@@ -240,7 +240,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary"/>
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt=""/>
+                            <img src="Img/cabin.png" class="img-responsive img-centered" alt=""/>
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -277,7 +277,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary"/>
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt=""/>
+                            <img src="Img/cake.png" class="img-responsive img-centered" alt=""/>
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -314,7 +314,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary"/>
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt=""/>
+                            <img src="Img/circus.png" class="img-responsive img-centered" alt=""/>
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -351,7 +351,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary"/>
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt=""/>
+                            <img src="Img/game.png" class="img-responsive img-centered" alt=""/>
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -388,7 +388,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary"/>
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt=""/>
+                            <img src="Img/safe.png" class="img-responsive img-centered" alt=""/>
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:

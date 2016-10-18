@@ -2,9 +2,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-      
-    <link href="Bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <script src="JQuery/bootstrap.min.js"></script>
 
     <br/><br/>
     <br/><br/>
@@ -14,7 +11,7 @@
         <div class="row">
              <div class="text-center">
                 <div class="col-md-12">
-                   <h1 class="page-header"> Usuarios </h1>
+                   <h1 class="page-header"> Usuarios </h1>               
             </div>
          </div>  
         </div> 
@@ -26,10 +23,10 @@
               </div>
              <div class="col-md-6 col-xs-8">
                   <asp:TextBox ID="UsuarioIdTextBox" runat="server" CssClass="form-control" placeholder="Usuario Id"></asp:TextBox>
-             </div>
-         </div>
+             </div>        
          <asp:Button ID="BuscarButton" runat="server" CssClass="btn btn-info" Text="Buscar" OnClick="BuscarButton_Click"/>
-       <br/><br/><br/> 
+      </div>
+     <br/>
     
      <%--Nombres--%>
          <div class="form-group">

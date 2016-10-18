@@ -35,9 +35,8 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body id="page-top" class="index">
     <form id="SiteForm" runat="server">  
-        <body id="page-top" class="index"/>
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
@@ -47,7 +46,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars fa-lg"></i> 
                 </button>
-                <a class="navbar-brand" href="#page-top">GC Tickets</a> <%--/Default.aspx--%>
+                <a class="navbar-brand" href="/Default.aspx">GC Tickets</a> 
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,6 +57,9 @@
                     </li>
                     <li class="#page-scroll">
                         <a href="/Registros/UsuariosForm.aspx">Usuarios</a>                 
+                    </li>
+                     <li class="#page-scroll">
+                        <a href="/Consultas/UsuariosConsulta.aspx">Usuarios Consulta</a>                 
                     </li>
                     <li class="page-scroll">
                         <a href="#portfolio">Portfolio</a>
