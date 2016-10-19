@@ -55,7 +55,7 @@ namespace BLL
             bool retorno = false;
             try
             {
-                Conexion.Ejecutar(String.Format("Insert Into Usuarios (Nombres, Apellidos, Telefono, Email, Direccion, NombreUsuario, Contrasenia) Values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", this.Nombres, this.Apellidos, this.Telefono, this.Email, this.Direccion, this.NombreUsuario, this.Contrasenia));
+                Conexion.Ejecutar(String.Format("Insert Into Usuarios(Nombres, Apellidos, Telefono, Email, Direccion, NombreUsuario, Contrasenia) Values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", this.Nombres, this.Apellidos, this.Telefono, this.Email, this.Direccion, this.NombreUsuario, this.Contrasenia));
                 retorno = true;
             }
             catch (Exception ex) { throw ex; }

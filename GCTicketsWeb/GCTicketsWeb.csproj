@@ -40,6 +40,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -58,6 +59,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\GCTicketsWeb.mdf" />
+    <Content Include="App_Data\GCTicketsWeb_log.ldf">
+      <DependentUpon>GCTicketsWeb.mdf</DependentUpon>
+    </Content>
     <Content Include="Bootstrap\bootstrap.min.css" />
     <Content Include="Bootstrap\font-awesome.min.css" />
     <Content Include="Bootstrap\freelancer.min.css" />
@@ -77,6 +82,7 @@
     <Content Include="JQuery\jquery-migrate-3.0.0.min.js" />
     <Content Include="JQuery\jquery.min.js" />
     <Content Include="Registros\UsuariosForm.aspx" />
+    <Content Include="Reportes\UsuariosReporte.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -102,6 +108,13 @@
     <Compile Include="Registros\UsuariosForm.aspx.designer.cs">
       <DependentUpon>UsuariosForm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\UsuariosReporte.aspx.cs">
+      <DependentUpon>UsuariosReporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\UsuariosReporte.aspx.designer.cs">
+      <DependentUpon>UsuariosReporte.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -124,6 +137,9 @@
       <Project>{b0ca8f06-2c03-4cf4-a23e-0f174d55adca}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reportes\UsuariosReport.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

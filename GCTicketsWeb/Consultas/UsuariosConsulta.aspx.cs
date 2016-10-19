@@ -17,24 +17,20 @@ namespace GCTicketsWeb.Consultas
 
         protected void BuscarButton_Click(object sender, EventArgs e)
         {
-            string condicion;
+            string Condicion="";
             UsuariosClass Usuario = new UsuariosClass();
-            if (BuscarTextBox.Text.Trim().Length == 0)
+            if (string.IsNullOrWhiteSpace(BuscarTextBox.Text))
             {
-                condicion = " 1=1 ";
+                Condicion = "1=1";
             }
             else
             {
-                if (CamposDropDownList.SelectedIndex == 0)
-                {
-                    condicion = CamposDropDownList.SelectedItem.Text + " = " + BuscarTextBox.Text;
-                }
-                else
-                {
-                    condicion = CamposDropDownList.SelectedItem.Text + " like " + "'%" + BuscarTextBox.Text + "%'";
+                if (!string.IsNullOrWhiteSpace(BuscarTextBox.Text))
+                {                   
+                    Condicion= CamposDropDownList.SelectedValue + " like '%" + BuscarTextBox.Text + "%'";
                 }
             }
-            ConsultaGridView.DataSource = Usuario.Listado(" * ", condicion, " ");
+            ConsultaGridView.DataSource = Usuario.Listado("Nombres, Apellidos, Telefono, Email, Direccion, NombreUsuario, Contrasenia", Condicion, "");
             ConsultaGridView.DataBind();
         }
     }
