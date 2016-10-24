@@ -116,6 +116,7 @@ namespace GCTicketsWeb.Registros
         protected void NuevoButton_Click(object sender, EventArgs e)
         {
             Limpiar();
+            Utilities.ShowToastr(this, "Se limpio", "Error", "Danger");
         }
 
         protected void GuardarButton_Click(object sender, EventArgs e)

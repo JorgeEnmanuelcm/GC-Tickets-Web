@@ -22,7 +22,7 @@
                 <asp:Label ID="UsuarioIdLabel" For="UsuarioIdTexBox" runat="server" Font-Bold="True" Text="Usuario Id:"></asp:Label>
               </div>
              <div class="col-md-6 col-xs-8">
-                  <asp:TextBox ID="UsuarioIdTextBox" runat="server" CssClass="form-control" placeholder="Usuario Id"></asp:TextBox>
+                  <asp:TextBox ID="UsuarioIdTextBox" runat="server" CssClass="form-control" placeholder="Usuario Id" MaxLength="4"></asp:TextBox>
              </div>        
          <asp:Button ID="BuscarButton" runat="server" CssClass="btn btn-info" Text="Buscar" OnClick="BuscarButton_Click"/>
       </div>
@@ -34,7 +34,7 @@
                 <asp:Label ID="NombresLabel" For="NombresTexBox" runat="server" Font-Bold="True" Text="Nombres: "></asp:Label>
               </div>
              <div class="col-md-6 col-xs-8">
-                  <asp:TextBox ID="NombresTextBox" runat="server" CssClass="form-control" placeholder="Nombres"></asp:TextBox> 
+                  <asp:TextBox ID="NombresTextBox" runat="server" CssClass="form-control" placeholder="Nombres" MaxLength="18"></asp:TextBox> 
              </div>
          </div>
         <br/><br/><br/> 
@@ -45,7 +45,7 @@
                 <asp:Label ID="ApellidosLabel" For="ApellidosTexBox" runat="server" Font-Bold="True" Text="Apellidos:"></asp:Label>
               </div>
              <div class="col-md-6 col-xs-8">
-                  <asp:TextBox ID="ApellidosTextBox" runat="server" CssClass="form-control" placeholder="Apellidos"></asp:TextBox> 
+                  <asp:TextBox ID="ApellidosTextBox" runat="server" CssClass="form-control" placeholder="Apellidos" MaxLength="18"></asp:TextBox> 
              </div>
          </div>
         <br/><br/><br/> 
@@ -56,7 +56,7 @@
                 <asp:Label ID="TelefonoLabel" For="TelefonoTexBox" runat="server" Font-Bold="True" Text="Telefono:"></asp:Label>
               </div>
              <div class="col-md-6 col-xs-8">
-                  <asp:TextBox ID="TelefonoTextBox" runat="server" CssClass="form-control" placeholder="Telefono"></asp:TextBox> 
+                  <asp:TextBox ID="TelefonoTextBox" runat="server" CssClass="form-control" placeholder="Telefono" MaxLength="15"></asp:TextBox> 
              </div>
          </div>
         <br/><br/><br/>
@@ -67,7 +67,7 @@
                 <asp:Label ID="EmailLabel" For="EmailTexBox" runat="server" Font-Bold="True" Text="Email:"></asp:Label>
               </div>
              <div class="col-md-6 col-xs-8">
-                  <asp:TextBox ID="EmailTextBox" runat="server" CssClass="form-control" placeholder="Email"></asp:TextBox> 
+                  <asp:TextBox ID="EmailTextBox" runat="server" CssClass="form-control" placeholder="Email" MaxLength="32" ></asp:TextBox> 
              </div>
          </div>
         <br/><br/><br/>
@@ -78,7 +78,7 @@
                 <asp:Label ID="DireccionLabel" For="DireccionTexBox" runat="server" Font-Bold="True" Text="Direccion:"></asp:Label>
               </div>
              <div class="col-md-6 col-xs-8">
-                  <asp:TextBox ID="DireccionTextBox" runat="server" CssClass="form-control" placeholder="Direccion"></asp:TextBox> 
+                  <asp:TextBox ID="DireccionTextBox" runat="server" CssClass="form-control" placeholder="Direccion" MaxLength="31"></asp:TextBox> 
              </div>
          </div>
         <br/><br/><br/>
@@ -89,7 +89,7 @@
                 <asp:Label ID="NombreUsuarioLabel" For="NombreUsuarioTexBox" runat="server" Font-Bold="True" Text="Nombre Usuario:"></asp:Label>
               </div>
              <div class="col-md-6 col-xs-8">
-                  <asp:TextBox ID="NombreUsuarioTextBox" runat="server" CssClass="form-control" placeholder="Nombre Usuario"></asp:TextBox> 
+                  <asp:TextBox ID="NombreUsuarioTextBox" runat="server" CssClass="form-control" placeholder="Nombre Usuario" MaxLength="12"></asp:TextBox> 
              </div>
          </div>
         <br/><br/><br/>
@@ -100,7 +100,7 @@
                 <asp:Label ID="ContraseniaLabel" For="ContraseniaTexBox" runat="server" Font-Bold="True" Text="Contraseña:"></asp:Label>
               </div>
              <div class="col-md-6 col-xs-8">
-                  <asp:TextBox ID="ContraseniaTextBox" runat="server" CssClass="form-control" placeholder="Contraseña"></asp:TextBox> 
+                  <asp:TextBox ID="ContraseniaTextBox"  TextMode="Password" runat="server" CssClass="form-control" placeholder="Contraseña" MaxLength="32"></asp:TextBox> 
              </div>
          </div>
         <br/><br/><br/>

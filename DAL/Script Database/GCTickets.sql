@@ -14,3 +14,24 @@ Contrasenia varchar(32)
 )
 
 --TipoUsuario int
+
+create table TipoEvento(
+TipoEventoId int primary key identity(1,1),
+Descripcion varchar(26)
+)
+
+create table Eventos(
+EventoId int primary key identity(1,1),
+TipoEventoId int,
+NombreEvento varchar(32),
+FechaEvento varchar(12),
+LugarEvento varchar(32)
+)
+
+create table EventosDetalle(
+Id int primary key identity(1,1),
+EventoId int,
+DescTicket varchar(16),
+CantDisponible int,
+PrecioTicket int
+)

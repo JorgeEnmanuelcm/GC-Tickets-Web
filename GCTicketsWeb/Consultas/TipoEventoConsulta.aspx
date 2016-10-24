@@ -1,8 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UsuariosConsulta.aspx.cs" Inherits="GCTicketsWeb.Consultas.UsuariosConsulta" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="TipoEventoConsulta.aspx.cs" Inherits="GCTicketsWeb.Consultas.TipoEventoConsulta" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
     <br/><br/>
     <br/><br/>
     <br/><br/>  
@@ -11,7 +10,7 @@
         <div class="row">
              <div class="text-center">
                 <div class="col-md-12">
-                   <h1 class="page-header"> Consulta Usuarios </h1>               
+                   <h1 class="page-header"> Consulta Tipo de eventos </h1>               
             </div>
          </div>  
         </div>
@@ -23,16 +22,14 @@
               </div>
              <div class="col-md-2 col-sm-2 col-xs-3">
                         <asp:DropDownList ID="CamposDropDownList" runat="server" class="btn btn-primary dropdown-toggle">
-                            <asp:ListItem>UsuarioId</asp:ListItem>
-                            <asp:ListItem>Nombres</asp:ListItem>
-                            <asp:ListItem>Apellidos</asp:ListItem>
-                            <asp:ListItem>NombreUsuario</asp:ListItem>
+                            <asp:ListItem>TipoEventoId</asp:ListItem>
+                            <asp:ListItem>Descripcion</asp:ListItem>
                         </asp:DropDownList>
                     </div>         
              <div class="col-md-6 col-xs-8">
                   <asp:TextBox ID="BuscarTextBox" runat="server" CssClass="form-control" placeholder="Buscar" MaxLength="16"></asp:TextBox>
              </div>
-         <asp:Button ID="BuscarButton" runat="server" CssClass="btn btn-info" Text="Buscar" OnClick="BuscarButton_Click"/>
+         <asp:Button ID="BuscarButton" runat="server" CssClass="btn btn-info" Text="Buscar" OnClick="BuscarButton_Click" />
       </div>
       <br/><br/><br/> 
 
