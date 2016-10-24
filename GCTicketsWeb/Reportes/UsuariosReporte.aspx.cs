@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Microsoft.Reporting.WebForms;
+using BLL;
 
 namespace GCTicketsWeb.Reportes
 {
@@ -11,7 +13,17 @@ namespace GCTicketsWeb.Reportes
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Reportes(ReportViewer1);
+        }
 
+        private void Reportes(ReportViewer rv)
+        {
+            rv.LocalReport.DataSources.Clear();
+            rv.ProcessingMode = ProcessingMode.Local;
+            rv.LocalReport.ReportPath = @"Reportes\UsuariosReport.rdlc";
+            ReportDataSource sourse = new ReportDataSource("Usuarios", UsuariosClass.ListadoDt("1=1"));
+            rv.LocalReport.DataSources.Add(sourse);
+            rv.LocalReport.Refresh();
         }
     }
 }

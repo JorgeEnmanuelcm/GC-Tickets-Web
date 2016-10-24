@@ -19,10 +19,10 @@ namespace GCTicketsWeb.Registros
         {
             if (!IsPostBack)
             {
-                //TipoEventoIdDropDownList.DataSource = Tipo.Listado(" * ", "1=1", "");
-                //TipoEventoIdDropDownList.DataTextField = "Descripcion";
-                //TipoEventoIdDropDownList.DataValueField = "TipoEventoId";
-                //TipoEventoIdDropDownList.DataBind();
+                TipoEventoIdDropDownList.DataSource = Tipo.Listado(" * ", "1=1", "");
+                TipoEventoIdDropDownList.DataTextField = "Descripcion";
+                TipoEventoIdDropDownList.DataValueField = "TipoEventoId";
+                TipoEventoIdDropDownList.DataBind();
 
                 dt.Columns.AddRange(new DataColumn[3] { new DataColumn("DescTicket"), new DataColumn("CantDisponible"), new DataColumn("PrecioTicket") });
                 ViewState["EventosClass"] = dt;
