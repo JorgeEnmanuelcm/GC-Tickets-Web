@@ -144,7 +144,7 @@ namespace BLL
             DataTable dt = new DataTable();
             try
             {
-                dt = Conexion.ObtenerDatos(string.Format("select * from Evento where NombreEvento= '" + UnicoNom + "'"));
+                dt = Conexion.ObtenerDatos(string.Format("select * from Eventos where NombreEvento= '" + UnicoNom + "'"));
                 if (dt.Rows.Count > 0)
                 {
                     this.EventoId = (int)dt.Rows[0]["EventoId"];

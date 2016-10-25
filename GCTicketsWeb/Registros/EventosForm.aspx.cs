@@ -107,7 +107,8 @@ namespace GCTicketsWeb.Registros
         public void DevolverDatos()
         {
             EventoIdTextBox.Text = Evento.EventoId.ToString();
-            TipoEventoIdDropDownList.SelectedValue = Evento.TipoEventoId.ToString();
+            //TipoEventoIdDropDownList.SelectedValue = Evento.TipoEventoId.ToString();
+            NombreEventoTextBox.Text = Evento.NombreEvento.ToString();
             FechaEventoTextBox.Text = Evento.FechaEvento.ToString();
             LugarEventoTextBox.Text = Evento.LugarEvento.ToString();
             foreach (var item in Evento.Detalle)
