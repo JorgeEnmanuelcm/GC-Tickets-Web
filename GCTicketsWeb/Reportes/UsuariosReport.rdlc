@@ -328,7 +328,7 @@
         <Top>2.30808cm</Top>
         <Left>3.83391cm</Left>
         <Height>2.35562cm</Height>
-        <Width>11.68042cm</Width>
+        <Width>11.68041cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -519,6 +519,18 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
+        <Line Name="Line2">
+          <Top>3.86884cm</Top>
+          <Left>15.18391cm</Left>
+          <Height>0cm</Height>
+          <Width>-14.60848cm</Width>
+          <ZIndex>4</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+          </Style>
+        </Line>
       </ReportItems>
       <Style>
         <Border>

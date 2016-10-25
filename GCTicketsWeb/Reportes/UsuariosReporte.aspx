@@ -11,7 +11,7 @@
       <div class="container">
          <asp:ScriptManager ID="ScriptManager1" runat="server">
                         </asp:ScriptManager>
-    <rsweb:ReportViewer ID="ReportViewer1" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt">
+    <rsweb:ReportViewer ID="ReportViewer1" runat="server" Width="100%" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt">
     </rsweb:ReportViewer>
           </div>
 </asp:Content>

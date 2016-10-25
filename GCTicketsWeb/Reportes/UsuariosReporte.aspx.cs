@@ -13,7 +13,10 @@ namespace GCTicketsWeb.Reportes
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Reportes(ReportViewer1);
+            if (!IsPostBack)
+            {
+                Reportes(ReportViewer1);
+        }
         }
 
         private void Reportes(ReportViewer rv)
