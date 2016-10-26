@@ -157,5 +157,13 @@ namespace BLL
             }
             return dt.Rows.Count > 0;
         }
+
+        public DataTable Dat()
+        {
+             ConexionDB Conexion = new ConexionDB();
+             DataTable dt = new DataTable();
+             dt = Conexion.ObtenerDatos("select NombreEvento, FechaEvento, LugarEvento from Eventos");
+             return dt;
+        }
     }
 }

@@ -187,22 +187,22 @@
                         <h3>Around the Web</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="https://www.youtube.com/channel/UCT8L6m-_W1H-Vb6EuszBVhw" class="btn-social btn-outline"><i class="fa fa-youtube-play"></i></a>
+                                <a href="https://www.youtube.com/channel/UCT8L6m-_W1H-Vb6EuszBVhw" target="_blank" class="btn-social btn-outline"><i class="fa fa-youtube-play"></i></a>
                             </li>
                             <li>
-                                <a href="https://facebook.com" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://facebook.com" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/GeorgeECM" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                <a href="https://twitter.com/GeorgeECM" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                             </li>   
                             <li>
-                                <a href="https://instagram.com/GeorgeECM" class="btn-social btn-outline"><i class="fa fa-instagram"></i></a>
+                                <a href="https://instagram.com/GeorgeECM" target="_blank" class="btn-social btn-outline"><i class="fa fa-instagram"></i></a>
                             </li>          
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com" target="_blank">Start Bootstrap</a>.</p>
                     </div>
                 </div>
             </div>
