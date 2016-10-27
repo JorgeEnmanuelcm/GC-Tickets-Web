@@ -6,7 +6,7 @@
     <br/>
     <br/>
     <div>
-        <asp:DataList ID="MenuDataList1" runat="server" CellPadding="4" ForeColor="#333333">
+        <asp:DataList ID="MenuDataList1" RepeatColumns="4" runat="server" CellPadding="4" ForeColor="#333333" OnSelectedIndexChanged="selectdindex">
             <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
             <HeaderTemplate>
                 <table>

@@ -21,5 +21,11 @@ namespace GCTicketsWeb
             }
 
         }
+
+        protected void selectdindex(object sender, EventArgs e)
+        {
+            DataListItem dl = MenuDataList1.Items[MenuDataList1.SelectedIndex];
+            //Label labe = (Label) 
+        }
     }
 }
