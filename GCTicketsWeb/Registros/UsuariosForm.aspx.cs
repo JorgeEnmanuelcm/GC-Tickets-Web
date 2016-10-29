@@ -115,8 +115,9 @@ namespace GCTicketsWeb.Registros
 
         protected void NuevoButton_Click(object sender, EventArgs e)
         {
+            Page.ClientScript.RegisterStartupScript(this.GetType(),
+  "toastr_message", "toastr.error('There was an error', 'no hay inventario')", true);
             Limpiar();
-            Utilities.ShowToastr(this, "Se limpio", "Error", "Danger");
         }
 
         protected void GuardarButton_Click(object sender, EventArgs e)

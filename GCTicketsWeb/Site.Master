@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="GCTicketsWeb.Site" %>
+﻿﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="GCTicketsWeb.Site" %>
 
 <!DOCTYPE html>
 
@@ -15,7 +15,7 @@
     <link href="img/favicon.ico" rel="icon"/>
     <!-- Bootstrap Core CSS -->
     <link href="Bootstrap/bootstrap.min.css" rel="stylesheet"/>
-    <script src="JQuery/toastr.min.js"></script>
+
     <!-- Theme CSS -->
     <link href="Bootstrap/freelancer.min.css" rel="stylesheet"/>
 
@@ -56,7 +56,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="#page-scroll">
-                        <a href="MenuDataList.aspx">Log in</a>                 
+                        <a href="/Registros/UsuariosForm.aspx">Log in</a>                 
                     </li>
                      <li class="#page-scroll">
                         <a href="/Reportes/UsuariosReporte.aspx">Usuarios Reporte</a>                 
@@ -94,7 +94,7 @@
 
     <!-- Theme JavaScript -->
     <script src="JQuery/freelancer.min.js"></script>
-    <script src="JQuery/toastr.min.js"></script>   
+ 
     </form>
 </body>
 </html>

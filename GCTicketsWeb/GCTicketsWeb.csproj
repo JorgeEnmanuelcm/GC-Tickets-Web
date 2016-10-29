@@ -67,6 +67,7 @@
     <Content Include="Bootstrap\font-awesome.min.css" />
     <Content Include="Bootstrap\freelancer.min.css" />
     <Content Include="Bootstrap\Login.css" />
+    <Content Include="JQuery\bootstrap.min.js" />
     <Content Include="Consultas\TipoEventoConsulta.aspx" />
     <Content Include="Consultas\UsuariosConsulta.aspx" />
     <Content Include="Default.aspx" />
@@ -78,16 +79,14 @@
     <Content Include="Img\indians.jpg" />
     <Content Include="Img\profile.png" />
     <Content Include="Img\xgames.jpg" />
-    <Content Include="JQuery\bootstrap.min.js" />
     <Content Include="JQuery\contact_me.js" />
     <Content Include="JQuery\freelancer.min.js" />
     <Content Include="JQuery\jqBootstrapValidation.js" />
     <Content Include="JQuery\jquery-migrate-3.0.0.min.js" />
     <Content Include="JQuery\jquery.min.js" />
     <Content Include="JQuery\Login.js" />
-    <Content Include="JQuery\toastr.min.js" />
     <Content Include="Login.aspx" />
-    <Content Include="MenuDataList.aspx" />
+    <Content Include="Menu.aspx" />
     <Content Include="Registros\EventosForm.aspx" />
     <Content Include="Registros\TipoEventoForm.aspx" />
     <Content Include="Registros\UsuariosForm.aspx" />
@@ -129,12 +128,12 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MenuDataList.aspx.cs">
-      <DependentUpon>MenuDataList.aspx</DependentUpon>
+    <Compile Include="Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MenuDataList.aspx.designer.cs">
-      <DependentUpon>MenuDataList.aspx</DependentUpon>
+    <Compile Include="Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registros\EventosForm.aspx.cs">

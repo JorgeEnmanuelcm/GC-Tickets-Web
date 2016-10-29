@@ -21,6 +21,7 @@ namespace GCTicketsWeb.Registros
         {
             TipoEventoIdTextBox.Text = string.Empty;
             DescripcionTextBox.Text = string.Empty;
+            Utilities.ShowToastr(this, "Se limpio", "Error", "Danger");
         }
 
         private bool ObtenerDatos()
