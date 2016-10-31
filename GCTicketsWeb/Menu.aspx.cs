@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BLL;
 
 namespace GCTicketsWeb
 {
@@ -11,7 +12,12 @@ namespace GCTicketsWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                EventosClass Evento = new EventosClass();
+                DataList1.DataSource = Evento.Dat();
+                DataList1.DataBind();
+            }
         }
     }
 }

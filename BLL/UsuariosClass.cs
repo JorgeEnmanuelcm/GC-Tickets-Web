@@ -120,10 +120,13 @@ namespace BLL
             return Conexion.ObtenerDatos(("Select " + Campos + " from Usuarios where " + Condicion + ordenar));
         }
 
+
         public static DataTable ListadoDt(string Condicion)
         {
             ConexionDB Conexion = new ConexionDB();
             return Conexion.ObtenerDatos(string.Format("select * from Usuarios where " + Condicion));
         }
     }
+
+
 }

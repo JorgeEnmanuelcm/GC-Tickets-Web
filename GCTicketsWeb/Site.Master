@@ -56,10 +56,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="#page-scroll">
-                        <a href="/Registros/UsuariosForm.aspx">Log in</a>                 
+                        <a href="Menu.aspx">Log in</a>                 
                     </li>
                      <li class="#page-scroll">
-                        <a href="/Reportes/UsuariosReporte.aspx">Usuarios Reporte</a>                 
+                        <a href="/Registros/EventosForm.aspx">Usuarios Reporte</a>                 
                     </li>
                     <li class="page-scroll">
                         <a href="#portfolio">Portfolio</a>
