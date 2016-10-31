@@ -15,12 +15,9 @@
          </div>  
         </div> 
 
-     &nbsp
-     &nbsp
-     &nbsp
          <%--Menu de eventos  --%> 
         <div class="text-center">
-            <asp:DataList ID="DataList1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Both" RepeatColumns="2" RepeatDirection="Horizontal">
+            <asp:DataList ID="DataList1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Both" RepeatColumns="2" RepeatDirection="Horizontal" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
             <FooterStyle BackColor="White" ForeColor="#000066" />
             <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
             <ItemStyle ForeColor="#000066" />
@@ -29,15 +26,23 @@
                           <tr>
                              <td><h3> <%# Eval("NombreEvento")  %></h3></td>
                           </tr>
+                         <tr>                            
+                             <td><asp:Label ID="FechaEventoLabel" runat="server" Text="Fecha del evento"></asp:Label></td>
+                         </tr>
                           <tr>
                              <td><h2> <%# Eval("FechaEvento")  %></h2></td>
                           </tr>
+                         <tr>                            
+                            <td><asp:Label ID="LugarEventoLabel" runat="server" Text="Lugar del evento"></asp:Label></td>
+                         </tr>
                           <tr>
                             <td><h2> <%# Eval("LugarEvento")  %></h2></td>
                          </tr>
-                          <tr>
+                         <tr>
                          <td>
-                            <asp:LinkButton runat="server" CssClass="btn btn-success" Text ="Comprar" CommandName="Select" ></asp:LinkButton> 
+                            <li>
+                                <a href="/Registros/VentasForm.aspx" class="btn btn-success">Comprar<i class="fa fa-ticket"></i></a>
+                            </li>  
                          </td>
                          </tr>
                   </table>
