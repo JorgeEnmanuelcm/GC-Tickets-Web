@@ -59,6 +59,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdmPanel.aspx" />
     <Content Include="App_Data\GCTicketsWeb.mdf" />
     <Content Include="App_Data\GCTicketsWeb_log.ldf">
       <DependentUpon>GCTicketsWeb.mdf</DependentUpon>
@@ -95,6 +96,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdmPanel.aspx.cs">
+      <DependentUpon>AdmPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdmPanel.aspx.designer.cs">
+      <DependentUpon>AdmPanel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Consultas\TipoEventoConsulta.aspx.cs">
       <DependentUpon>TipoEventoConsulta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -110,8 +110,8 @@
                     <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-users"></i> Adm Panel
+                    <a href="https://github.com/JorgeEnmanuelcm" class="btn btn-lg btn-outline">
+                        <i class="fa fa-github"></i> Jorge's Github
                     </a>
                 </div>
             </div>
@@ -197,7 +197,7 @@
                             </li>   
                             <li>
                                 <a href="https://instagram.com/GeorgeECM" target="_blank" class="btn-social btn-outline"><i class="fa fa-instagram"></i></a>
-                            </li>          
+                            </li>         
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
