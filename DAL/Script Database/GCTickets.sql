@@ -1,6 +1,6 @@
-Create database GCTickets
+Create database GCTicketsWeb
 
-use GCTickets
+use GCTicketsWeb
 
 Create table Usuarios(
 UsuarioId int primary key identity(1,1),
@@ -10,10 +10,9 @@ Telefono varchar(15),
 Email varchar(32),
 Direccion varchar(32),
 NombreUsuario varchar(12),
-Contrasenia varchar(32)
+Contrasenia varchar(32),
+TipoUsuario int
 )
-
---TipoUsuario int
 
 create table TipoEvento(
 TipoEventoId int primary key identity(1,1),

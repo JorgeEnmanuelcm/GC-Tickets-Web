@@ -59,7 +59,7 @@
                         <a href="Menu.aspx">Log in</a>                 
                     </li>
                      <li class="#page-scroll">
-                        <a href="/Registros/EventosForm.aspx">Usuarios Reporte</a>                 
+                        <a href="Login.aspx">Usuarios Reporte</a>                 
                     </li>
                     <li class="page-scroll">
                         <a href="#portfolio">Portfolio</a>

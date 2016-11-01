@@ -21,7 +21,6 @@ namespace GCTicketsWeb.Registros
         {
             TipoEventoIdTextBox.Text = string.Empty;
             DescripcionTextBox.Text = string.Empty;
-            Utilities.ShowToastr(this, "Se limpio", "Error", "Danger");
         }
 
         private bool ObtenerDatos()
@@ -60,7 +59,7 @@ namespace GCTicketsWeb.Registros
             int.TryParse(TipoEventoIdTextBox.Text, out id);
             if (id < 0)
             {
-                Response.Write("<script>alert('error')</script>");
+                Response.Write("<script>alert('Error!')</script>");
             }
             else
             {
@@ -70,7 +69,7 @@ namespace GCTicketsWeb.Registros
                 }
                 else
                 {
-                    Response.Write("<script>alert('error')</script>");
+                    Response.Write("<script>alert('Error!')</script>");
                 }
             }
         }
@@ -84,7 +83,7 @@ namespace GCTicketsWeb.Registros
         {
             if (TipoEvento.UnicaDescripcion(DescripcionTextBox.Text))
             {
-                Response.Write("<script>alert('error')</script>");
+                Response.Write("<script>alert('Error, ese tipo de evento ya existe.')</script>");
                 DescripcionTextBox.Text = string.Empty;
             }
             else
@@ -95,11 +94,11 @@ namespace GCTicketsWeb.Registros
                 if (TipoEvento.Insertar())
                 {
                     Limpiar();
-                    Response.Write("<script>alert('Inserto')</script>");
+                    Response.Write("<script>alert('Guardado con exito!')</script>");
                 }
                 else
                 {
-                    Response.Write("<script>alert('error')</script>");
+                    Response.Write("<script>alert('Error!')</script>");
                 }
             }
             if (TipoEventoIdTextBox.Text.Length > 0)
@@ -107,11 +106,12 @@ namespace GCTicketsWeb.Registros
                 ObtenerDatos();
                 if (TipoEvento.Editar())
                 {
-                    Response.Write("<script>alert('Modifico')</script>");
+                    Limpiar();
+                    Response.Write("<script>alert('Se Modifico!')</script>");
                 }
                 else
                 {
-                    Response.Write("<script>alert('error')</script>");
+                    Response.Write("<script>alert('Error!')</script>");
                 }
                 }
             }
@@ -127,16 +127,17 @@ namespace GCTicketsWeb.Registros
                     if (TipoEvento.Eliminar())
                     {
                         Limpiar();
+                        Response.Write("<script>alert('Eliminado con exito!')</script>");
                     }
                     else
                     {
-                        Response.Write("<script>alert('error')</script>");
+                        Response.Write("<script>alert('Error!')</script>");
                     }
                 }
             }
             catch (Exception)
             {
-                Response.Write("<script>alert('error')</script>");
+                Response.Write("<script>alert('Error!')</script>");
             }
         }
     }

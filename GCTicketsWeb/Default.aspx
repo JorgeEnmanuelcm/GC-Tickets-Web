@@ -104,14 +104,14 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    <p>GC Tickets es un proyecto iniciado con fines educativos, creado por Jorge, un estudiante de Ingenieria en Sistemas en la Universidad Catolica Nordestana(UCNE), donde se encuentra en termino de estudios.</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                    <p>Este proyecto comenzo como un sistema de ventas de tickets para computadores, para hacer las tareas mas eficientes. Aqui en el presente se llevo el proyecto a la modalidad web con fin de elaborar el sistema en una pagina web.</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="https://github.com/JorgeEnmanuelcm" class="btn btn-lg btn-outline">
-                        <i class="fa fa-github"></i> Jorge's Github
+                        <i class="fa fa-github"></i> Jorge on Github
                     </a>
                 </div>
             </div>

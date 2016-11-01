@@ -100,7 +100,18 @@
                 <asp:Label ID="ContraseniaLabel" For="ContraseniaTexBox" runat="server" Font-Bold="True" Text="Contraseña:"></asp:Label>
               </div>
              <div class="col-md-6 col-xs-8">
-                  <asp:TextBox ID="ContraseniaTextBox"  TextMode="Password" runat="server" CssClass="form-control" placeholder="Contraseña" MaxLength="32"></asp:TextBox> 
+                  <asp:TextBox ID="ContraseniaTextBox" TextMode="Password" runat="server" CssClass="form-control" placeholder="Contraseña" MaxLength="32"></asp:TextBox> 
+             </div>
+         </div>
+        <br/><br/><br/>
+
+        <%--ConfirmarContraseña--%>
+        <div class="form-group">
+             <div class="col-md-12">
+                <asp:Label ID="ConfContraseniaLabel" For="ConfContraseniaTexBox" runat="server" Font-Bold="True" Text="Confirmar Contraseña:"></asp:Label>
+              </div>
+             <div class="col-md-6 col-xs-8">
+                  <asp:TextBox ID="ConfContraseniaTexBox" TextMode="Password" runat="server" CssClass="form-control" placeholder="Confirmar Contraseña" MaxLength="32"></asp:TextBox> 
              </div>
          </div>
         <br/><br/><br/>

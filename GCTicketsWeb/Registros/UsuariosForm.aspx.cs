@@ -98,6 +98,14 @@ namespace GCTicketsWeb.Registros
             {
                 Retorno = false;
             }
+            if (id > 0)
+            {
+                Usuario.TipoUsuario = 0;
+            }
+            else
+            {
+                Retorno = false;
+            }
             return Retorno;
         }
 
@@ -110,29 +118,32 @@ namespace GCTicketsWeb.Registros
             EmailTextBox.Text = Usuario.Email.ToString();
             DireccionTextBox.Text = Usuario.Direccion.ToString();
             NombreUsuarioTextBox.Text = Usuario.NombreUsuario.ToString();
-            ContraseniaTextBox.Text = Usuario.Contrasenia.ToString();
         }
 
         protected void NuevoButton_Click(object sender, EventArgs e)
         {
-            Page.ClientScript.RegisterStartupScript(this.GetType(),
-  "toastr_message", "toastr.error('There was an error', 'no hay inventario')", true);
             Limpiar();
         }
 
         protected void GuardarButton_Click(object sender, EventArgs e)
         {
+            if(ContraseniaTextBox.Text.Trim() != ConfContraseniaTexBox.Text.Trim())
+            {
+                Response.Write("<script>alert('Error, las contrasenas no coinciden.')</script>");
+            }
+            else
+            {
             if (UsuarioIdTextBox.Text.Length == 0)
             {
                 ObtenerDatos();
                 if (Usuario.Insertar())
                 {
                     Limpiar();
-                    Response.Write("<script>alert('Inserto')</script>");
+                    Response.Write("<script>alert('Guardado con exito!')</script>");
                 }
                 else
                 {
-                    Response.Write("<script>alert('error')</script>");
+                    Response.Write("<script>alert('Error!')</script>");
                 }
             }
             if (UsuarioIdTextBox.Text.Length > 0)
@@ -140,12 +151,14 @@ namespace GCTicketsWeb.Registros
                 ObtenerDatos();
                 if (Usuario.Editar())
                 {
-                    Response.Write("<script>alert('Modifico')</script>");
+                   Limpiar();
+                   Response.Write("<script>alert('Se Modifico!')</script>");
                 }
                 else
                 {
-                    Response.Write("<script>alert('error')</script>");
+                    Response.Write("<script>alert('Error!')</script>");
                 }
+            }
             }
         }
 
@@ -159,16 +172,17 @@ namespace GCTicketsWeb.Registros
                     if (Usuario.Eliminar())
                     {
                         Limpiar();
+                        Response.Write("<script>alert('Eliminado!')</script>");
                     }
                     else
                     {
-                        Response.Write("<script>alert('error')</script>");
+                        Response.Write("<script>alert('Error!')</script>");
                     }
                 }
             }
             catch (Exception)
             {
-                Response.Write("<script>alert('error')</script>");
+                Response.Write("<script>alert('Error!')</script>");
             }
         }
 
@@ -178,7 +192,7 @@ namespace GCTicketsWeb.Registros
             int.TryParse(UsuarioIdTextBox.Text, out id);
             if (id < 0)
             {
-                Response.Write("<script>alert('error')</script>");
+                Response.Write("<script>alert('Error!')</script>");
             }
             else
             {
@@ -188,7 +202,7 @@ namespace GCTicketsWeb.Registros
                 }
                 else
                 {
-                    Response.Write("<script>alert('error')</script>");
+                    Response.Write("<script>alert('Error!')</script>");
                 }
             }
         }

@@ -17,6 +17,7 @@ namespace BLL
         public string Direccion { get; set; }
         public string NombreUsuario { get; set; }
         public string Contrasenia { get; set; }
+        public int TipoUsuario { get; set; }
 
         public UsuariosClass()
         {
@@ -28,6 +29,7 @@ namespace BLL
             this.Direccion = "";
             this.NombreUsuario = "";
             this.Contrasenia = "";
+            this.TipoUsuario = 0;
         }
 
         public UsuariosClass(int usuarioid, string nombres, string apellidos, string telefono, string email, string direccion, string nombreusuario, string contrasenia)
@@ -55,7 +57,7 @@ namespace BLL
             bool retorno = false;
             try
             {
-                Conexion.Ejecutar(String.Format("Insert Into Usuarios(Nombres, Apellidos, Telefono, Email, Direccion, NombreUsuario, Contrasenia) Values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", this.Nombres, this.Apellidos, this.Telefono, this.Email, this.Direccion, this.NombreUsuario, this.Contrasenia));
+                Conexion.Ejecutar(String.Format("Insert Into Usuarios(Nombres, Apellidos, Telefono, Email, Direccion, NombreUsuario, Contrasenia, TipoUsuario) Values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}',{7})", this.Nombres, this.Apellidos, this.Telefono, this.Email, this.Direccion, this.NombreUsuario, this.Contrasenia, this.TipoUsuario));
                 retorno = true;
             }
             catch (Exception ex) { throw ex; }
