@@ -34,3 +34,5 @@ DescTicket varchar(16),
 CantDisponible int,
 PrecioTicket int
 )
+
+--create table Ventas()
